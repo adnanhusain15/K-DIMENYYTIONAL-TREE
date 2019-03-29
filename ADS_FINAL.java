@@ -10,13 +10,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author Asus
+ * @author Adnan
  */
 public class ADS_FINAL {
+
     ArrayList<Integer> keys;
     class Node 
 	{ 
-		int roll; 
+       	        int roll; 
                 int marks;
                 int sem;
 		Node left, right; 
@@ -28,6 +29,7 @@ public class ADS_FINAL {
                         this.sem = sem;
 			left = right = null; 
 		} 
+	    
                 @Override
     protected void finalize() throws Throwable{
         System.out.println("Roll number: "+this.roll+" from Semester:"+this.sem+" is deleted and collected by garbage collector ");
@@ -50,6 +52,7 @@ public class ADS_FINAL {
                 root = insertBySem(root, roll , marks,sem); 
                 
 	} 
+	/*Insert by roll*/
         Node insertByRoll(Node root, int roll, int marks,int sem) 
 	{ 
 
@@ -76,6 +79,7 @@ public class ADS_FINAL {
 		/* return the (unchanged) node pointer */
 		return root; 
 	} 
+	/*Insert by Sem*/
         Node insertBySem(Node root, int roll, int marks,int sem) 
 	{ 
 
