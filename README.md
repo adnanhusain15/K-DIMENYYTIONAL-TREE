@@ -9,9 +9,9 @@ Student data consist of five elements:
 
 Tree is structered on the basis of user choice either by roll or sem.
 Program provide three basic operations
-Insert - By Roll/Sem
-Delete- Basis of Marks
-INorder Traversal.
+1) Insert - By Roll/Sem
+2) Delete- Basis of Marks
+3) INorder Traversal.
 
 Everytime we delete a node it is collected by garbage collector to avoid memory wastage.
 For deletion we perform inorder traversal and find out all those nodes that have marks less or equal to the limit(stated by the user) .
